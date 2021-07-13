@@ -29,6 +29,10 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
         <link href="css/style.css" rel="stylesheet" />
         <!-- Favicon -->
         <!-- Title -->
@@ -37,7 +41,7 @@
 
     <body>
         <header>
-            <nav class="blue-grey hoverable">
+            <nav class="blue-grey hoverable animate__animated animate__backInDown">
                 <div class="nav-wrapper container">
                     <a
                         target="_blank"
@@ -47,7 +51,10 @@
                             right
                             waves-effect waves-block waves-light
                             hoverable
+                            tooltipped
                         "
+                        data-position="bottom"
+                        data-tooltip="Download"
                         ><i class="material-icons">file_download </i></a
                     >
                     <ul id="nav-mobile" class="left">
@@ -55,11 +62,19 @@
                             <a
                                 target="_blank"
                                 href="https://www.linkedin.com/in/calwann-de-souza-freire-731181151/"
+                                class="tooltipped"
+                                data-position="bottom"
+                                data-tooltip="LinkedIn"
                                 ><i class="fab fa-linkedin"></i
                             ></a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://github.com/calwann"
+                            <a
+                                target="_blank"
+                                href="https://github.com/calwann"
+                                class="tooltipped"
+                                data-position="bottom"
+                                data-tooltip="Github"
                                 ><i class="fab fa-github"></i
                             ></a>
                         </li>
@@ -67,6 +82,9 @@
                             <a
                                 target="_blank"
                                 href="https://www.facebook.com/calwann.freire/"
+                                class="tooltipped"
+                                data-position="bottom"
+                                data-tooltip="Facebook"
                                 ><i class="fab fa-facebook"></i
                             ></a>
                         </li>
@@ -74,6 +92,9 @@
                             <a
                                 target="_blank"
                                 href="https://www.instagram.com/calwann/"
+                                class="tooltipped"
+                                data-position="bottom"
+                                data-tooltip="Instagram"
                                 ><i class="fab fa-instagram"></i
                             ></a>
                         </li>
@@ -82,7 +103,7 @@
             </nav>
         </header>
         <main>
-            <div class="col s12 container">
+            <div class="col s12 container animate__animated animate__fadeIn animate__delay-1s">
                 <h4 class="header">Calwann de Souza Freire</h4>
                 <h5>Desenvolvedor full-stack | Engenheiro da Computação</h5>
                 <div class="card horizontal hoverable hide-on-small-only">
@@ -152,7 +173,7 @@
                                     right
                                     grey
                                     waves-effect waves-block waves-light
-                                    tooltipped
+                                    hoverable
                                 "
                             >
                                 <i class="material-icons">arrow_downward</i>
@@ -203,10 +224,7 @@
                                         grey
                                         waves-effect waves-block waves-light
                                         hoverable
-                                        tooltipped
                                     "
-                                    data-position="left"
-                                    data-tooltip="Dados pessoais"
                                 >
                                     <i class="material-icons">arrow_upward</i>
                                 </div></span
@@ -254,10 +272,7 @@
                                     grey
                                     waves-effect waves-block waves-light
                                     hoverable
-                                    tooltipped
                                 "
-                                data-position="left"
-                                data-tooltip="Resumo"
                             >
                                 <i class="material-icons">arrow_downward</i>
                             </div></span
